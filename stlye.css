@@ -1,0 +1,68 @@
+.menu-btn {
+    position: absolute;
+    z-index: 3;
+    right: 35px;
+    top: 35px;
+    cursor: pointer;
+    transition: all 0.5s ease-out;
+}
+
+.menu-btn .btn-line {
+    width: 28px;
+    height: 3px;
+    margin: 0 0 5px 0;
+    background: black;
+    transition: all 0.5s ease-out;
+}
+
+.menu-btn.close {
+    transform: rotate(180deg);
+}
+
+.menu-btn.close .btn-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-btn.close .btn-line:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-btn.close .btn-line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
+}
+
+.menu {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    opacity: 0.9;
+    visibility: hidden;
+    transition: all 0.5s ease-out;
+}
+
+.menu.show {
+    visibility: visible;
+}
+
+.nav-item {
+    transition-delay: 0.1s;
+}
+
+.nav-item:nth-child(2) {
+    transition-delay: 0.2s;
+}
+
+.nav-item:nth-child(3) {
+    transition-delay: 0.3s;
+}
+
+.nav-item:nth-child(4) {
+    transition-delay: 0.4s;
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
